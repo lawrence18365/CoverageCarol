@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Perfect Coverage - CoverageCarol</title>
+    <meta name="description" content="Complete Carol's simple assessment to find perfect final expense coverage.">
+    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/82346df2075cf90ed44a8e36099a87a8?family=Satoshi+Variable" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="quiz-styles.css" />
+</head>
+<body class="quiz-page">
+    <!-- Compact Header -->
+    <header class="quiz-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Coverage<span>Carol</span></a>
+                <div class="security-badge">
+                    <i class="fas fa-shield-check"></i>
+                    <span>Secure & Private</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Single Screen Quiz Container -->
+    <main class="quiz-container">
+        <div class="container">
+            <!-- Top Section: Carol + Progress -->
+            <div class="quiz-header-section">
+                <div class="carol-intro">
+                    <img src="https://i.postimg.cc/tTHTVwBJ/Chat-GPT-Image-May-17-2025-02-46-18-PM.png" 
+                         alt="Carol" class="carol-avatar">
+                    <div class="carol-message">
+                        <h1>Hi! I'm Carol</h1>
+                        <p>Let me help you find <strong>affordable coverage starting at just $1/day</strong></p>
+                    </div>
+                </div>
+                
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text">Question <span id="currentStep">1</span> of 6</span>
+                </div>
+            </div>
+
+            <!-- Main Question Area -->
+            <div class="question-section">
+                <div class="question-content" id="questionContent">
+                    <h2 class="question-title">What's your current age?</h2>
+                    <p class="question-subtitle">This helps us find the most suitable coverage options for your needs</p>
+                    
+                    <div class="answers-grid" id="answersGrid">
+                        <button class="answer-option" data-value="50-55">50-55 years old</button>
+                        <button class="answer-option" data-value="56-60">56-60 years old</button>
+                        <button class="answer-option" data-value="61-65">61-65 years old</button>
+                        <button class="answer-option" data-value="66-70">66-70 years old</button>
+                        <button class="answer-option" data-value="71-75">71-75 years old</button>
+                        <button class="answer-option" data-value="76-80">76-80 years old</button>
+                        <button class="answer-option" data-value="81+">81+ years old</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section: Navigation + Trust -->
+            <div class="quiz-footer-section">
+                <div class="navigation">
+                    <button class="nav-btn back-btn" id="backBtn" disabled>
+                        <i class="fas fa-arrow-left"></i> Back
+                    </button>
+                    <button class="nav-btn next-btn" id="nextBtn" disabled>
+                        <span id="nextText">Continue</span> <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-content">
+            <div class="loading-avatar">
+                <img src="https://i.postimg.cc/tTHTVwBJ/Chat-GPT-Image-May-17-2025-02-46-18-PM.png" alt="Carol">
+                <div class="loading-spinner"></div>
+            </div>
+            <h3>Carol is finding your perfect match...</h3>
+            <p>Connecting you with qualified specialists</p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
